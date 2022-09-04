@@ -32,8 +32,8 @@ Partial Class Form1
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.tbMaxPrice = New System.Windows.Forms.Label()
-        Me.tbAverage = New System.Windows.Forms.Label()
+        Me.tbMaxPrice = New System.Windows.Forms.TextBox()
+        Me.tbAverage = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'lbAirports
@@ -119,7 +119,7 @@ Partial Class Form1
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(500, 432)
+        Me.Label4.Location = New System.Drawing.Point(496, 432)
         Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(174, 20)
@@ -129,7 +129,7 @@ Partial Class Form1
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(495, 494)
+        Me.Label5.Location = New System.Drawing.Point(496, 514)
         Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(290, 20)
@@ -138,22 +138,18 @@ Partial Class Form1
         '
         'tbMaxPrice
         '
-        Me.tbMaxPrice.BackColor = System.Drawing.SystemColors.ControlDark
-        Me.tbMaxPrice.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbMaxPrice.Location = New System.Drawing.Point(500, 460)
-        Me.tbMaxPrice.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.tbMaxPrice.Location = New System.Drawing.Point(500, 465)
         Me.tbMaxPrice.Name = "tbMaxPrice"
-        Me.tbMaxPrice.Size = New System.Drawing.Size(447, 34)
-        Me.tbMaxPrice.TabIndex = 10
+        Me.tbMaxPrice.ReadOnly = True
+        Me.tbMaxPrice.Size = New System.Drawing.Size(445, 26)
+        Me.tbMaxPrice.TabIndex = 12
         '
         'tbAverage
         '
-        Me.tbAverage.BackColor = System.Drawing.SystemColors.ControlDark
-        Me.tbAverage.Location = New System.Drawing.Point(500, 537)
-        Me.tbAverage.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.tbAverage.Location = New System.Drawing.Point(499, 537)
         Me.tbAverage.Name = "tbAverage"
-        Me.tbAverage.Size = New System.Drawing.Size(447, 35)
-        Me.tbAverage.TabIndex = 11
+        Me.tbAverage.Size = New System.Drawing.Size(446, 26)
+        Me.tbAverage.TabIndex = 13
         '
         'Form1
         '
@@ -189,10 +185,8 @@ Partial Class Form1
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents Label5 As System.Windows.Forms.Label
-    Friend WithEvents tbMaxPrice As System.Windows.Forms.Label
-    Friend WithEvents tbAverage As System.Windows.Forms.Label
+    Friend WithEvents tbMaxPrice As TextBox
+    Friend WithEvents tbAverage As TextBox
 
 
-
-    
 End Class
