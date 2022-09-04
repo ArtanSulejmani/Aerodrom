@@ -4,7 +4,7 @@ Public Class Airport
     Public name As String   ' Name of airport
     Public city As String   ' Location
     Public shortName As String
-    'Public Destinations As List(Of Destination) 'List Destination
+    Public Destinations As List(Of Destination) 'List Destination
 
     'Public _txtShortName As TextBox()
     'Public _txtCityName As TextBox()

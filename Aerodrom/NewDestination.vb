@@ -42,13 +42,12 @@ Public Class NewDestination
 
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
-        'Dim Destination As NewDestination = New Destination()
         Destination = New Destination(TextBox1.Text.Trim(), NumericUpDown1.Value, NumericUpDown2.Value)
         DialogResult = System.Windows.Forms.DialogResult.OK
-        ' If Destination.ShowDialog() = System.Windows.Forms.DialogResult.OK Then
-        'Destination.Items.Add(Destination.NewDestination.toString)
-        'End If
 
+        ' If Destination.ShowDialog() = System.Windows.Forms.DialogResult.OK Then
+        ' Destination.Items.Add(Destination.NewDestination.toString)
+        ' End If
     End Sub
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
@@ -67,8 +66,4 @@ Public Class NewDestination
 
     'End Sub
 
-    
-
-
-    
 End Class
